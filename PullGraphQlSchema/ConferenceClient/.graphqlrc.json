@@ -1,0 +1,12 @@
+{
+  "schema": "schema.graphql",
+  "documents": "**/*.graphql",
+  "extensions": {
+    "strawberryShake": {
+      "name": "ConferenceClient",
+      "namespace": "PullGraphQlSchema.GraphQL",
+      "url": "https://hc-conference-app.azurewebsites.net/graphql/",
+      "dependencyInjection": true
+    }
+  }
+}

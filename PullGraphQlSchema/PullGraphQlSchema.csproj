@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <GraphQL Remove="Queries.graphql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Queries.graphql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="11.1.0" />
+    <PackageReference Include="StrawberryShake.Transport.Http" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ConferenceClient\" />
+  </ItemGroup>
+
+</Project>

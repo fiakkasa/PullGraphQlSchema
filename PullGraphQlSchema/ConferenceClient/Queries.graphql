@@ -1,0 +1,13 @@
+﻿query GetSessions {
+  sessions(order: { title: ASC }) {
+    nodes {
+      title
+      startTime
+      endTime
+      description: abstract
+      speakers {       
+        name
+      }
+    }
+  }
+}
